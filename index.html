@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reddit Homepage</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Reddit</h1>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="handleNavigation(this)">Home</a></li>
+        <li><a href="#" onclick="handleNavigation(this)">About</a></li>
+        <li><a href="#" onclick="handleNavigation(this)">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="post">
+      <h2 class="post-title">No Paid Sick Leave for Railway Workers</h2>
+      <p class="post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae libero ut lectus fermentum tincidunt. Mauris lacinia arcu ac nisi bibendum ullamcorper.</p>
+      <div class="post-footer">
+        <span class="upvotes" onclick="handleUpvote(this)">1000 upvotes</span>
+        <span class="comments" onclick="handleComments(this)">50 comments</span>
+      </div>
+    </section>
+    <section class="post">
+      <h2 class="post-title">Post Title 2</h2>
+      <p class="post-content">Sed quis volutpat ipsum. Curabitur condimentum ligula vitae magna ultrices, nec vestibulum lorem consequat. Proin blandit metus ut efficitur condimentum.</p>
+      <div class="post-footer">
+        <span class="upvotes" onclick="handleUpvote(this)">500 upvotes</span>
+        <span class="comments" onclick="handleComments(this)">20 comments</span>
+      </div>
+    </section>
+    <section class="post">
+      <h2 class="post-title">Post Title 3</h2>
+      <p class="post-content">Nunc ullamcorper turpis non malesuada aliquam. Vestibulum ac nulla et tellus gravida mollis. Maecenas consectetur tortor non urna lobortis feugiat.</p>
+      <div class="post-footer">
+        <span class="upvotes" onclick="handleUpvote(this)">800 upvotes</span>
+        <span class="comments" onclick="handleComments(this)">30 comments</span>
+      </div>
+    </section>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
