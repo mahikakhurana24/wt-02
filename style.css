@@ -11,7 +11,7 @@
   align-items: center; }
 
   body {
-    background-image: url("bg.png");
+    background-image: url("bg.jpg");
     background-repeat: no-repeat;
   background-size: 55%;
   
@@ -68,7 +68,7 @@ nav {
   align-self: center; }
   .gallery-nav div {
     flex: 1;
-    background-color: #aefafc;
+    background-color: #ff5700;
     cursor: pointer; }
     .gallery-nav div:hover {
       box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1); }
