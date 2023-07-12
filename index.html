@@ -1,47 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Reddit Homepage</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<title>iXd</title>
+	<link rel="stylesheet" href="style.css">
+	
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+	<script defer src="animation.js"></script>
+	<script defer src="function.js"></script>
+	<script defer src="fetch.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Reddit</h1>
-    <nav>
-      <ul>
-        <li><a href="#" onclick="handleNavigation(this)">Home</a></li>
-        <li><a href="#" onclick="handleNavigation(this)">About</a></li>
-        <li><a href="#" onclick="handleNavigation(this)">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="post">
-      <h2 class="post-title">No Paid Sick Leave for Railway Workers</h2>
-      <p class="post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae libero ut lectus fermentum tincidunt. Mauris lacinia arcu ac nisi bibendum ullamcorper.</p>
-      <div class="post-footer">
-        <span class="upvotes" onclick="handleUpvote(this)">1000 upvotes</span>
-        <span class="comments" onclick="handleComments(this)">50 comments</span>
-      </div>
-    </section>
-    <section class="post">
-      <h2 class="post-title">Post Title 2</h2>
-      <p class="post-content">Sed quis volutpat ipsum. Curabitur condimentum ligula vitae magna ultrices, nec vestibulum lorem consequat. Proin blandit metus ut efficitur condimentum.</p>
-      <div class="post-footer">
-        <span class="upvotes" onclick="handleUpvote(this)">500 upvotes</span>
-        <span class="comments" onclick="handleComments(this)">20 comments</span>
-      </div>
-    </section>
-    <section class="post">
-      <h2 class="post-title">Post Title 3</h2>
-      <p class="post-content">Nunc ullamcorper turpis non malesuada aliquam. Vestibulum ac nulla et tellus gravida mollis. Maecenas consectetur tortor non urna lobortis feugiat.</p>
-      <div class="post-footer">
-        <span class="upvotes" onclick="handleUpvote(this)">800 upvotes</span>
-        <span class="comments" onclick="handleComments(this)">30 comments</span>
-      </div>
-    </section>
-  </main>
-  
-  <script src="script.js"></script>
+	<div class="nav-wrapper">
+		<div class="logo">
+			<h1>Reddit</h1>
+		</div>
+
+		<nav>
+			<a href="#" id="Campus-link">
+				<div class="letter">C</div>
+				<div class="letter">a</div>
+				<div class="letter">m</div>
+				<div class="letter">p</div>
+				<div class="letter">u</div>
+				<div class="letter">s</div>
+			</a>
+			<a href="#" class="active" id="new-link">
+				<div class="letter">N</div>
+				<div class="letter">e</div>
+				<div class="letter">w</div>
+			</a>
+			<a href="#" id="Faculty-link">
+				<div class="letter">F</div>
+				<div class="letter">a</div>
+				<div class="letter">c</div>
+				<div class="letter">u</div>
+				<div class="letter">l</div>
+				<div class="letter">t</div>
+				<div class="letter">y</div>
+			</a>
+			<a href="#" id="Course-link">
+				<div class="letter">C</div>
+				<div class="letter">o</div>
+				<div class="letter">u</div>
+				<div class="letter">r</div>
+				<div class="letter">s</div>
+				<div class="letter">e</div>
+			</a>
+		</nav>
+	</div>
+
+	<div class="column-wrapper">
+		<section class="text-section new-content">
+			<h1>INTERACTION DESIGN </h1></h1>
+			<p>
+				Interaction design, is "the practice of designing interactive digital products, environments, systems, and services." Beyond the digital aspect, interaction design is also useful when creating physical products, exploring how a user might interact with it
+			</p>
+
+			<div class="details-btn">
+				DETAILS
+				<img src="plus.png" alt="Plus Icon">
+			</div>
+		</section>
+
+		<section class="image-section">
+			<div class="gallery-counter">
+				<div id="gallery-headline">
+					STUDENTS
+				</div>
+				<div id="gallery-loader">
+					<h2>01</h2>
+					<div class="loader">
+						<div class="loader-line"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="sidebar-section">
+			<div class="hamburger">
+				<div class="ham-line"></div>
+				<div class="ham-line" id="short"></div>
+				<div class="ham-line"></div>
+			</div>
+
+			<div class="social">
+				<a href="http://facebook.com">
+					<div class="letter">F</div>
+					<div class="letter">a</div>
+					<div class="letter">c</div>
+					<div class="letter">e</div>
+					<div class="letter">b</div>
+					<div class="letter">o</div>
+					<div class="letter">o</div>
+					<div class="letter">k</div>
+				</a>
+				<a href="http://twitter.com">
+					<div class="letter">T</div>
+					<div class="letter">w</div>
+					<div class="letter">i</div>
+					<div class="letter">t</div>
+					<div class="letter">t</div>
+					<div class="letter">e</div>
+					<div class="letter">r</div>
+				</a>
+				<a href="https://www.instagram.com/anant_national_university/">
+					<div class="letter">I</div>
+					<div class="letter">n</div>
+					<div class="letter">s</div>
+					<div class="letter">t</div>
+					<div class="letter">a</div>
+					<div class="letter">g</div>
+					<div class="letter">r</div>
+					<div class="letter">a</div>
+					<div class="letter">m</div>
+				</a>
+			</div>
+		</section>
+	</div>
+
+	<div class="gallery-nav">
+		<div id="yellow-bg">
+			<img src="arrow.png" alt="Arrow Icon">
+		</div>
+		<div id="white-bg">
+			<img src="arrow.png" alt="Arrow Icon">
+		</div>
+	</div>
 </body>
 </html>
